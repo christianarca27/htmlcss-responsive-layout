@@ -69,18 +69,19 @@ nav #nav-inner #nav-links {
 /* /nav */
 
 /* main */
-main section {
+/* sezione-uno */
+main #sezione-uno {
     padding-top: 50px;
     padding-bottom: 70px;
 }
 
-main section .row {
+main #sezione-uno .row {
     display: flex;
     flex-flow: column nowrap;
     gap: 25px;
 }
 
-main section .row .col {
+main #sezione-uno .row .col {
     background-color: #b5ddff;
     /* debug */
     padding-top: 35px;
@@ -93,40 +94,41 @@ main section .row .col {
     gap: 30px;
 }
 
-main section .row .col .col-text {
+main #sezione-uno .row .col .col-text {
     display: flex;
     flex-flow: column nowrap;
     gap: 30px;
 }
 
-main section .row .col .col-text .btn .fa-apple {
+main #sezione-uno .row .col .col-text .btn .fa-apple {
     margin-right: 5px;
 }
 
-main section .row .col img {
+main #sezione-uno .row .col img {
     width: 100%;
     height: auto;
 }
 
-main section .row .col > i {
+main #sezione-uno .row .col > i {
     font-size: 5em;
 }
 
-main section .row .col > p {
+main #sezione-uno .row .col > p {
     margin-bottom: 35px;
 }
+/* /sezione-uno */
 /* /main */
 
 @media screen and (min-width: 768px) {
-    main section .row {
+    main #sezione-uno .row {
         flex-flow: row wrap;
     }
 
-    main section .row .col:first-child {
+    main #sezione-uno .row .col:first-child {
         width: calc(100% / 3 * 2 - 25px / 3);
     }
 
-    main section .row .col {
+    main #sezione-uno .row .col {
         width: calc(100% / 3 - 25px / 3 * 2);
     }
 }
