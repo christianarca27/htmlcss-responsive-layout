@@ -113,6 +113,10 @@ main #sezione-uno .row .col {
     border-radius: 10px;
 }
 
+main #sezione-uno .row .col:first-child {
+    justify-content: space-between;
+}
+
 main #sezione-uno .row .col .col-text {
     display: flex;
     flex-flow: column nowrap;
@@ -295,5 +299,31 @@ footer #footer-inner {
 
         list-style-type: none;
         padding-inline-start: 0;
+    }
+
+    main #sezione-uno .row .col:first-child {
+        flex-flow: row nowrap;
+    }
+
+    main #sezione-uno .row .col:first-child img {
+        width: 50%;
+        height: auto;
+    }
+
+    main #sezione-due .row {
+        flex-flow: row nowrap;
+        align-items: end;
+    }
+
+    main #sezione-due .row .col:nth-of-type(1) {
+        width: 60%;
+    }
+
+    main #sezione-due .row .col:nth-of-type(2) {
+        width: 40%;
+    }
+
+    main #sezione-quattro .row .col {
+        width: calc(100% / 3 - 25px / 3 * 2);
     }
 }
