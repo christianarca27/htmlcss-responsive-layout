@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .container-centered {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-centered {
+    text-align: center;
 }
 
 .btn {
@@ -19,6 +27,15 @@
 .btn-white {
     background-color: white;
     color: black;
+}
+
+.btn-blue {
+    background-color: #0084fd;
+    color: white;
+}
+
+.btn-wide {
+    width: 200px;
 }
 
 /* nav */
@@ -50,6 +67,69 @@ nav #nav-inner #nav-links {
     display: none;
 }
 /* /nav */
+
+/* main */
+main section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+main section .row {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+}
+
+main section .row .col {
+    background-color: #b5ddff;
+    /* debug */
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+main section .row .col .col-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+main section .row .col .col-text .btn .fa-apple {
+    margin-right: 5px;
+}
+
+main section .row .col img {
+    width: 100%;
+    height: auto;
+}
+
+main section .row .col > i {
+    font-size: 5em;
+}
+
+main section .row .col > p {
+    margin-bottom: 35px;
+}
+/* /main */
+
+@media screen and (min-width: 768px) {
+    main section .row {
+        flex-flow: row wrap;
+    }
+
+    main section .row .col:first-child {
+        width: calc(100% / 3 * 2 - 25px / 3);
+    }
+
+    main section .row .col {
+        width: calc(100% / 3 - 25px / 3 * 2);
+    }
+}
 
 @media screen and (min-width: 992px) {
     .container-centered {
