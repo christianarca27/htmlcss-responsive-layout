@@ -34,6 +34,16 @@ body {
     color: white;
 }
 
+.btn-purple {
+    background-color: #9792e4;
+    color: black;
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+}
+
 .btn-wide {
     width: 200px;
 }
@@ -69,29 +79,31 @@ nav #nav-inner #nav-links {
 /* /nav */
 
 /* main */
-/* sezione-uno */
-main #sezione-uno {
+main section {
     padding-top: 50px;
     padding-bottom: 70px;
 }
 
-main #sezione-uno .row {
+main section .row {
     display: flex;
     flex-flow: column nowrap;
     gap: 25px;
 }
 
+main section .row .col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 25px;
+}
+
+/* sezione-uno */
 main #sezione-uno .row .col {
     background-color: #b5ddff;
-    /* debug */
     padding-top: 35px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
-
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 30px;
 }
 
 main #sezione-uno .row .col .col-text {
@@ -117,6 +129,22 @@ main #sezione-uno .row .col > p {
     margin-bottom: 35px;
 }
 /* /sezione-uno */
+
+/* sezione-due */
+main #sezione-due {
+    background-color: #9792e4;
+}
+main #sezione-due .row .col:nth-of-type(2) {
+    background-color: white;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+main #sezione-due .row .col img {
+    width: 100%;
+    height: auto;
+}
+/* /sezione-due */
 /* /main */
 
 @media screen and (min-width: 768px) {
