@@ -224,8 +224,32 @@ main #sezione-sei {
     color: white;
     text-align: center;
 }
+
+main #sezione-sei .row .col {
+    padding: 30px;
+}
 /* /sezione-sei */
 /* /main */
+
+/* footer */
+footer {
+    background-color: #333333;
+    height: 250px;
+    padding: 50px 20px;
+
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer #footer-inner {
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+/* /footer */
 
 @media screen and (min-width: 768px) {
     main #sezione-uno .row {
