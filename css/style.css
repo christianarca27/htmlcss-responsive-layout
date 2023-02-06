@@ -101,7 +101,6 @@ main section .row {
 main section .row .col {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     gap: 25px;
 }
 
@@ -125,7 +124,7 @@ main #sezione-uno .row .col .col-text .btn .fa-apple {
 }
 
 main #sezione-uno .row .col img {
-    width: 100%;
+    width: 200px;
     height: auto;
 }
 
@@ -182,8 +181,6 @@ main #sezione-quattro .row .col {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
-
-    align-items: start;
 }
 /* /sezione-quattro */
 
@@ -262,6 +259,22 @@ footer #footer-inner {
 
     main #sezione-uno .row .col {
         width: calc(100% / 3 - 25px / 3 * 2);
+    }
+
+    main #sezione-tre .row .col {
+        flex-flow: row nowrap;
+    }
+
+    main #sezione-quattro .row {
+        flex-flow: row wrap;
+    }
+
+    main #sezione-quattro .row .col {
+        width: calc(100% / 2 - 25px / 2);
+    }
+
+    main #sezione-cinque .row {
+        flex-flow: row nowrap;
     }
 }
 
