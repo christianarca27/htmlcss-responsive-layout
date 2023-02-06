@@ -39,9 +39,17 @@ body {
     color: black;
 }
 
+.btn-white-text {
+    color: white;
+}
+
 .btn-circle {
     width: 40px;
     height: 40px;
+}
+
+.btn-medium {
+    width: 100px;
 }
 
 .btn-wide {
@@ -145,6 +153,78 @@ main #sezione-due .row .col img {
     height: auto;
 }
 /* /sezione-due */
+
+/* sezione-tre */
+main #sezione-tre {
+    text-align: center;
+}
+
+main #sezione-tre .row .col {
+    background-color: #9792e4;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+main #sezione-tre .row .col .col-left .testimonial-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* /sezione-tre */
+
+/* sezione-quattro */
+main #sezione-quattro {
+    background-color: #9792e4;
+}
+
+main #sezione-quattro .row .col {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    align-items: start;
+}
+/* /sezione-quattro */
+
+/* sezione-cinque */
+main #sezione-cinque .col #about-us-pic {
+    width: 200px;
+
+    position: relative;
+}
+
+main #sezione-cinque .col #about-us-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main #sezione-cinque .col #about-us-pic span {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 10em;
+    color: #9792e4;
+}
+
+main #sezione-cinque .row .col {
+    background-color: white;
+    padding: 30px;
+
+    align-items: start;
+}
+/* /sezione-cinque */
+
+/* sezione-sei */
+main #sezione-sei {
+    background-color: #9792e4;
+    color: white;
+    text-align: center;
+}
+/* /sezione-sei */
 /* /main */
 
 @media screen and (min-width: 768px) {
