@@ -3,3 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container-centered {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: .7em;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+/* nav */
+nav {
+    background-color: #0084fd;
+    height: 75px;
+}
+
+nav #nav-inner {
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+}
+
+nav #nav-inner #nav-logo {
+    
+}
+
+nav #nav-inner .fa-bars {
+    font-size: 2em;
+}
+
+nav #nav-inner #nav-links {
+    display: none;
+}
+/* /nav */
+
+@media screen and (min-width: 992px) {
+    .container-centered {
+        max-width: 1200px;
+    }
+
+    nav #nav-inner .fa-bars {
+        display: none;
+    }
+
+    nav #nav-inner #nav-links {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 30px;
+
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+}
